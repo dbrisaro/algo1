@@ -1,0 +1,289 @@
+        -:    0:Source:/home/eph3m3r4l/Desktop/TPI-algoritmos/tpi-template-alumnos/tests/ej5TEST.cpp
+        -:    0:Graph:/home/eph3m3r4l/Desktop/TPI-algoritmos/tpi-template-alumnos/cmake-build-debug/CMakeFiles/reunionesRemotas.dir/tests/ej5TEST.gcno
+        -:    0:Data:/home/eph3m3r4l/Desktop/TPI-algoritmos/tpi-template-alumnos/cmake-build-debug/CMakeFiles/reunionesRemotas.dir/tests/ej5TEST.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1:#include "gtest/gtest.h"
+        -:    2:#include "../ejercicios.h"
+        -:    3:
+        8:    4:TEST(ralentizar, unHablanteSenialAscendente) {
+        1:    4-block  0
+        1:    4-block  1
+        1:    4-block  2
+    %%%%%:    4-block  3
+    %%%%%:    4-block  4
+    %%%%%:    4-block  5
+    %%%%%:    4-block  6
+    %%%%%:    4-block  7
+    %%%%%:    4-block  8
+        1:    4-block  9
+        1:    4-block 10
+        1:    4-block 11
+        1:    4-block 12
+        1:    4-block 13
+        1:    4-block 14
+        1:    4-block 15
+        1:    5:    int prof = 16;
+        1:    6:    int freq = 10;
+        -:    7:
+        2:    8:    senial sig1={ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+        1:    8-block  0
+        1:    8-block  1
+    %%%%%:    8-block  2
+    %%%%%:    8-block  3
+    %%%%%:    8-block  4
+        -:    9:
+        3:   10:    reunion meet_out = { make_pair(sig1,0 )  };
+        1:   10-block  0
+        1:   10-block  1
+        2:   10-block  2
+        1:   10-block  3
+    %%%%%:   10-block  4
+    %%%%%:   10-block  5
+    %%%%%:   10-block  6
+    %%%%%:   10-block  7
+    %%%%%:   10-block  8
+    %%%%%:   10-block  9
+    %%%%%:   10-block 10
+    %%%%%:   10-block 11
+    %%%%%:   10-block 12
+    %%%%%:   10-block 13
+        -:   11:
+        -:   12:    senial sig1_res={1, 1, 2, 2, 3, 3, 4, 4, 5, 5,
+        2:   13:                     6, 6, 7, 7, 8, 8, 9, 9, 10};
+        1:   13-block  0
+        1:   13-block  1
+    %%%%%:   13-block  2
+    %%%%%:   13-block  3
+    %%%%%:   13-block  4
+        -:   14:
+        3:   15:    reunion meet_res = { make_pair(sig1_res,0 ) };
+        1:   15-block  0
+        1:   15-block  1
+        2:   15-block  2
+        1:   15-block  3
+    %%%%%:   15-block  4
+    %%%%%:   15-block  5
+    %%%%%:   15-block  6
+    %%%%%:   15-block  7
+    %%%%%:   15-block  8
+    %%%%%:   15-block  9
+    %%%%%:   15-block 10
+    %%%%%:   15-block 11
+    %%%%%:   15-block 12
+        -:   16:
+        1:   17:    ralentizar(meet_out,prof,freq);
+        1:   17-block  0
+        -:   18:
+        1:   19:    EXPECT_EQ(meet_res, meet_out);
+        1:   19-block  0
+        1:   19-block  1
+    $$$$$:   19-block  2
+    $$$$$:   19-block  3
+    $$$$$:   19-block  4
+    $$$$$:   19-block  5
+    $$$$$:   19-block  6
+        1:   19-block  7
+    %%%%%:   19-block  8
+    %%%%%:   19-block  9
+    %%%%%:   19-block 10
+    %%%%%:   19-block 11
+    %%%%%:   19-block 12
+    %%%%%:   19-block 13
+        1:   20:}
+    %%%%%:   20-block  0
+        -:   21:
+        8:   22:TEST(ralentizar, senialImpar) {
+        1:   22-block  0
+        1:   22-block  1
+        1:   22-block  2
+    %%%%%:   22-block  3
+    %%%%%:   22-block  4
+    %%%%%:   22-block  5
+    %%%%%:   22-block  6
+    %%%%%:   22-block  7
+    %%%%%:   22-block  8
+        1:   22-block  9
+        1:   22-block 10
+        1:   22-block 11
+        1:   22-block 12
+        1:   22-block 13
+        1:   22-block 14
+        1:   22-block 15
+        1:   23:    int prof = 16;
+        1:   24:    int freq = 10;
+        -:   25:
+        2:   26:    senial sig1={ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11};
+        1:   26-block  0
+        1:   26-block  1
+    %%%%%:   26-block  2
+    %%%%%:   26-block  3
+    %%%%%:   26-block  4
+        -:   27:
+        3:   28:    reunion meet_out = { make_pair(sig1,0 )  };
+        1:   28-block  0
+        1:   28-block  1
+        2:   28-block  2
+        1:   28-block  3
+    %%%%%:   28-block  4
+    %%%%%:   28-block  5
+    %%%%%:   28-block  6
+    %%%%%:   28-block  7
+    %%%%%:   28-block  8
+    %%%%%:   28-block  9
+    %%%%%:   28-block 10
+    %%%%%:   28-block 11
+    %%%%%:   28-block 12
+    %%%%%:   28-block 13
+        -:   29:
+        -:   30:    senial sig1_res={1, 1, 2, 2, 3, 3, 4, 4, 5, 5,
+        2:   31:                     6, 6, 7, 7, 8, 8, 9, 9, 10, 10, 11};
+        1:   31-block  0
+        1:   31-block  1
+    %%%%%:   31-block  2
+    %%%%%:   31-block  3
+    %%%%%:   31-block  4
+        -:   32:
+        3:   33:    reunion meet_res = { make_pair(sig1_res,0 ) };
+        1:   33-block  0
+        1:   33-block  1
+        2:   33-block  2
+        1:   33-block  3
+    %%%%%:   33-block  4
+    %%%%%:   33-block  5
+    %%%%%:   33-block  6
+    %%%%%:   33-block  7
+    %%%%%:   33-block  8
+    %%%%%:   33-block  9
+    %%%%%:   33-block 10
+    %%%%%:   33-block 11
+    %%%%%:   33-block 12
+        -:   34:
+        1:   35:    ralentizar(meet_out,prof,freq);
+        1:   35-block  0
+        -:   36:
+        1:   37:    EXPECT_EQ(meet_res, meet_out);
+        1:   37-block  0
+        1:   37-block  1
+    $$$$$:   37-block  2
+    $$$$$:   37-block  3
+    $$$$$:   37-block  4
+    $$$$$:   37-block  5
+    $$$$$:   37-block  6
+        1:   37-block  7
+    %%%%%:   37-block  8
+    %%%%%:   37-block  9
+    %%%%%:   37-block 10
+    %%%%%:   37-block 11
+    %%%%%:   37-block 12
+    %%%%%:   37-block 13
+        1:   38:}
+    %%%%%:   38-block  0
+        8:   39:TEST(ralentizar, dosHablantesSenialAscendenteYDescendente) {
+        1:   39-block  0
+        1:   39-block  1
+        1:   39-block  2
+    %%%%%:   39-block  3
+    %%%%%:   39-block  4
+    %%%%%:   39-block  5
+    %%%%%:   39-block  6
+    %%%%%:   39-block  7
+        1:   39-block  8
+        1:   39-block  9
+        1:   39-block 10
+        1:   39-block 11
+        1:   39-block 12
+        1:   39-block 13
+        1:   39-block 14
+        1:   40:    int prof = 16;
+        1:   41:    int freq = 10;
+        -:   42:
+        2:   43:    senial sig1={ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+        1:   43-block  0
+        1:   43-block  1
+    %%%%%:   43-block  2
+    %%%%%:   43-block  3
+    %%%%%:   43-block  4
+        2:   44:    senial sig2={ 10, 9, 8, 7, 6, 5, 4, 3, 2, 1};
+        1:   44-block  0
+    %%%%%:   44-block  1
+    %%%%%:   44-block  2
+    %%%%%:   44-block  3
+        -:   45:
+        4:   46:    reunion meet_out = { make_pair(sig1,0 ), make_pair(sig2,1 )  };
+        1:   46-block  0
+        1:   46-block  1
+        1:   46-block  2
+        3:   46-block  3
+        2:   46-block  4
+    %%%%%:   46-block  5
+    %%%%%:   46-block  6
+    %%%%%:   46-block  7
+    %%%%%:   46-block  8
+    %%%%%:   46-block  9
+    %%%%%:   46-block 10
+    %%%%%:   46-block 11
+    %%%%%:   46-block 12
+    %%%%%:   46-block 13
+    %%%%%:   46-block 14
+    %%%%%:   46-block 15
+    %%%%%:   46-block 16
+        -:   47:
+        -:   48:    senial sig1_res={1, 1, 2, 2, 3, 3, 4, 4, 5, 5,
+        2:   49:                     6, 6, 7, 7, 8, 8, 9, 9, 10};
+        1:   49-block  0
+        1:   49-block  1
+    %%%%%:   49-block  2
+    %%%%%:   49-block  3
+    %%%%%:   49-block  4
+        -:   50:    senial sig2_res={10, 9, 9, 8, 8, 7, 7, 6, 6, 5, 5,
+        2:   51:                     4, 4, 3, 3, 2, 2, 1, 1};
+        1:   51-block  0
+    %%%%%:   51-block  1
+    %%%%%:   51-block  2
+    %%%%%:   51-block  3
+        -:   52:
+        4:   53:    reunion meet_res = { make_pair(sig1_res,0 ), make_pair(sig2_res,1 ) };
+        1:   53-block  0
+        1:   53-block  1
+        1:   53-block  2
+        3:   53-block  3
+        2:   53-block  4
+    %%%%%:   53-block  5
+    %%%%%:   53-block  6
+    %%%%%:   53-block  7
+    %%%%%:   53-block  8
+    %%%%%:   53-block  9
+    %%%%%:   53-block 10
+    %%%%%:   53-block 11
+    %%%%%:   53-block 12
+    %%%%%:   53-block 13
+    %%%%%:   53-block 14
+    %%%%%:   53-block 15
+        -:   54:
+        1:   55:    ralentizar(meet_out,prof,freq);
+        1:   55-block  0
+        -:   56:
+        1:   57:    EXPECT_EQ(meet_res, meet_out);
+        1:   57-block  0
+        1:   57-block  1
+    $$$$$:   57-block  2
+    $$$$$:   57-block  3
+    $$$$$:   57-block  4
+    $$$$$:   57-block  5
+    $$$$$:   57-block  6
+        1:   57-block  7
+    %%%%%:   57-block  8
+    %%%%%:   57-block  9
+    %%%%%:   57-block 10
+    %%%%%:   57-block 11
+    %%%%%:   57-block 12
+    %%%%%:   57-block 13
+        5:   58:}
+        1:   58-block  0
+        1:   58-block  1
+        1:   58-block  2
+        1:   58-block  3
+        1:   58-block  4
+        1:   58-block  5
+    %%%%%:   58-block  6

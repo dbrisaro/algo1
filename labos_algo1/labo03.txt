@@ -1,0 +1,14 @@
+1) El vector v0 se inicializa con 10 elementos de valor 2 BIEN
+
+2) 11 BIEN
+
+3) mat[3][3] BIEN
+
+4) El minimo elemento de la linea 3 BIEN
+
+5) ifstream fin; char coma; int n; float f; bool z;
+fin.open("archivo.csv", ios::in);
+fin >> z >> coma >> f >> coma >> n;
+
+BIEN
+

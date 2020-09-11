@@ -1,0 +1,22 @@
+        -:    0:Source:/home/eph3m3r4l/Desktop/TPI-algoritmos/tpi-template-alumnos/main.cpp
+        -:    0:Graph:/home/eph3m3r4l/Desktop/TPI-algoritmos/tpi-template-alumnos/cmake-build-debug/CMakeFiles/reunionesRemotas.dir/main.gcno
+        -:    0:Data:/home/eph3m3r4l/Desktop/TPI-algoritmos/tpi-template-alumnos/cmake-build-debug/CMakeFiles/reunionesRemotas.dir/main.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1:// MAIN del Trabajo Practico de Implementacion
+        -:    2:#include <iostream>
+        -:    3:#include "gtest/gtest.h"
+        -:    4:
+        -:    5:using namespace std;
+        1:    6:int main(int argc, char **argv) {
+        1:    6-block  0
+        1:    7:    std::cout << "Implementando TPI!!" << std::endl;
+        1:    7-block  0
+        1:    8:    ::testing::InitGoogleTest(&argc, argv);
+        1:    9:    return RUN_ALL_TESTS();
+        4:   10:}
+        1:   10-block  0
+        1:   10-block  1
+        1:   10-block  2
+        1:   10-block  3
+        1:   10-block  4

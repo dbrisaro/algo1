@@ -1,0 +1,184 @@
+        -:    0:Source:/home/eph3m3r4l/Desktop/TPI-algoritmos/tpi-template-alumnos/tests/ej4TEST.cpp
+        -:    0:Graph:/home/eph3m3r4l/Desktop/TPI-algoritmos/tpi-template-alumnos/cmake-build-debug/CMakeFiles/reunionesRemotas.dir/tests/ej4TEST.gcno
+        -:    0:Data:/home/eph3m3r4l/Desktop/TPI-algoritmos/tpi-template-alumnos/cmake-build-debug/CMakeFiles/reunionesRemotas.dir/tests/ej4TEST.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1:#include "gtest/gtest.h"
+        -:    2:#include "../ejercicios.h"
+        -:    3:
+        8:    4:TEST(acelerar, senialLargoImpar) {
+        1:    4-block  0
+        1:    4-block  1
+        1:    4-block  2
+    %%%%%:    4-block  3
+    %%%%%:    4-block  4
+    %%%%%:    4-block  5
+    %%%%%:    4-block  6
+    %%%%%:    4-block  7
+    %%%%%:    4-block  8
+        1:    4-block  9
+        1:    4-block 10
+        1:    4-block 11
+        1:    4-block 12
+        1:    4-block 13
+        1:    4-block 14
+        1:    4-block 15
+        1:    5:    int prof = 16;
+        1:    6:    int freq = 10;
+        -:    7:
+        -:    8:    senial sig = { 9,   43,   54,  103,   44,   59,  -10,  -44,  -55, -104,  -45,
+        -:    9:                   -60,    9,   43,   54,  103,   44,   59,  -10,  -44,  -55, -104,
+        2:   10:                   -45,  -60,    9};
+        1:   10-block  0
+        1:   10-block  1
+    %%%%%:   10-block  2
+    %%%%%:   10-block  3
+    %%%%%:   10-block  4
+        -:   11:
+        3:   12:    reunion reunion_out = {make_pair(sig,0)};
+        1:   12-block  0
+        1:   12-block  1
+        2:   12-block  2
+        1:   12-block  3
+    %%%%%:   12-block  4
+    %%%%%:   12-block  5
+    %%%%%:   12-block  6
+    %%%%%:   12-block  7
+    %%%%%:   12-block  8
+    %%%%%:   12-block  9
+    %%%%%:   12-block 10
+    %%%%%:   12-block 11
+    %%%%%:   12-block 12
+    %%%%%:   12-block 13
+        2:   13:    senial sig_res={43, 103, 59, -44, -104, -60, 43, 103, 59, -44, -104, -60};
+        1:   13-block  0
+        1:   13-block  1
+    %%%%%:   13-block  2
+    %%%%%:   13-block  3
+    %%%%%:   13-block  4
+        3:   14:    reunion res = { make_pair(sig_res,0) };
+        1:   14-block  0
+        1:   14-block  1
+        2:   14-block  2
+        1:   14-block  3
+    %%%%%:   14-block  4
+    %%%%%:   14-block  5
+    %%%%%:   14-block  6
+    %%%%%:   14-block  7
+    %%%%%:   14-block  8
+    %%%%%:   14-block  9
+    %%%%%:   14-block 10
+    %%%%%:   14-block 11
+    %%%%%:   14-block 12
+        -:   15:
+        1:   16:    acelerar(reunion_out,prof,freq);
+        1:   16-block  0
+        -:   17:
+        1:   18:    EXPECT_EQ(res, reunion_out);
+        1:   18-block  0
+        1:   18-block  1
+    $$$$$:   18-block  2
+    $$$$$:   18-block  3
+    $$$$$:   18-block  4
+    $$$$$:   18-block  5
+    $$$$$:   18-block  6
+        1:   18-block  7
+    %%%%%:   18-block  8
+    %%%%%:   18-block  9
+    %%%%%:   18-block 10
+    %%%%%:   18-block 11
+    %%%%%:   18-block 12
+    %%%%%:   18-block 13
+        1:   19:}
+    %%%%%:   19-block  0
+        -:   20:
+        8:   21:TEST(acelerar, senialLargoPar) {
+        1:   21-block  0
+        1:   21-block  1
+        1:   21-block  2
+    %%%%%:   21-block  3
+    %%%%%:   21-block  4
+    %%%%%:   21-block  5
+    %%%%%:   21-block  6
+    %%%%%:   21-block  7
+        1:   21-block  8
+        1:   21-block  9
+        1:   21-block 10
+        1:   21-block 11
+        1:   21-block 12
+        1:   21-block 13
+        1:   21-block 14
+        1:   22:    int prof = 16;
+        1:   23:    int freq = 10;
+        -:   24:
+        -:   25:    senial sig = { 9,   43,   54,  103,   44,   59,  -10,  -44,  -55, -104,  -45,
+        -:   26:                   -60,    9,   43,   54,  103,   44,   59,  -10,  -44,  -55, -104,
+        2:   27:                   -45,  -60};
+        1:   27-block  0
+        1:   27-block  1
+    %%%%%:   27-block  2
+    %%%%%:   27-block  3
+    %%%%%:   27-block  4
+        -:   28:
+        3:   29:    reunion reunion_out = {make_pair(sig,0)};
+        1:   29-block  0
+        1:   29-block  1
+        2:   29-block  2
+        1:   29-block  3
+    %%%%%:   29-block  4
+    %%%%%:   29-block  5
+    %%%%%:   29-block  6
+    %%%%%:   29-block  7
+    %%%%%:   29-block  8
+    %%%%%:   29-block  9
+    %%%%%:   29-block 10
+    %%%%%:   29-block 11
+    %%%%%:   29-block 12
+    %%%%%:   29-block 13
+        2:   30:    senial sig_res={43, 103, 59, -44, -104, -60, 43, 103, 59, -44, -104, -60};
+        1:   30-block  0
+        1:   30-block  1
+    %%%%%:   30-block  2
+    %%%%%:   30-block  3
+    %%%%%:   30-block  4
+        3:   31:    reunion res = { make_pair(sig_res,0) };
+        1:   31-block  0
+        1:   31-block  1
+        2:   31-block  2
+        1:   31-block  3
+    %%%%%:   31-block  4
+    %%%%%:   31-block  5
+    %%%%%:   31-block  6
+    %%%%%:   31-block  7
+    %%%%%:   31-block  8
+    %%%%%:   31-block  9
+    %%%%%:   31-block 10
+    %%%%%:   31-block 11
+    %%%%%:   31-block 12
+        -:   32:
+        1:   33:    acelerar(reunion_out,prof,freq);
+        1:   33-block  0
+        -:   34:
+        1:   35:    EXPECT_EQ(res, reunion_out);
+        1:   35-block  0
+        1:   35-block  1
+    $$$$$:   35-block  2
+    $$$$$:   35-block  3
+    $$$$$:   35-block  4
+    $$$$$:   35-block  5
+    $$$$$:   35-block  6
+        1:   35-block  7
+    %%%%%:   35-block  8
+    %%%%%:   35-block  9
+    %%%%%:   35-block 10
+    %%%%%:   35-block 11
+    %%%%%:   35-block 12
+    %%%%%:   35-block 13
+        5:   36:}
+        1:   36-block  0
+        1:   36-block  1
+        1:   36-block  2
+        1:   36-block  3
+        1:   36-block  4
+        1:   36-block  5
+    %%%%%:   36-block  6

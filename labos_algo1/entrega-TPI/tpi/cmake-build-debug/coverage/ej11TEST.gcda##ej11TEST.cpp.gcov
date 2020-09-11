@@ -1,0 +1,116 @@
+        -:    0:Source:/home/eph3m3r4l/Desktop/TPI-algoritmos/tpi-template-alumnos/tests/ej11TEST.cpp
+        -:    0:Graph:/home/eph3m3r4l/Desktop/TPI-algoritmos/tpi-template-alumnos/cmake-build-debug/CMakeFiles/reunionesRemotas.dir/tests/ej11TEST.gcno
+        -:    0:Data:/home/eph3m3r4l/Desktop/TPI-algoritmos/tpi-template-alumnos/cmake-build-debug/CMakeFiles/reunionesRemotas.dir/tests/ej11TEST.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1:#include "gtest/gtest.h"
+        -:    2:#include "../ejercicios.h"
+        -:    3:
+        8:    4:TEST(filtradoMediana, senialDesordenada) {
+        1:    4-block  0
+        1:    4-block  1
+        1:    4-block  2
+    %%%%%:    4-block  3
+    %%%%%:    4-block  4
+    %%%%%:    4-block  5
+    %%%%%:    4-block  6
+    %%%%%:    4-block  7
+    %%%%%:    4-block  8
+        1:    4-block  9
+        1:    4-block 10
+        1:    4-block 11
+        1:    4-block 12
+        1:    4-block 13
+        1:    4-block 14
+        1:    4-block 15
+        1:    5:    int prof = 16;
+        1:    6:    int freq = 10;
+        1:    7:    int r = 2;
+        -:    8:
+        2:    9:    senial s = {54, 23, -65, -102, 34, 71, -35, 77, 13, -46};
+        1:    9-block  0
+        1:    9-block  1
+    %%%%%:    9-block  2
+    %%%%%:    9-block  3
+    %%%%%:    9-block  4
+        -:   10:
+        1:   11:    filtradoMediana(s, r, prof, freq);
+        2:   12:    senial esperada = {54, 23, 23, 23, -35, 34, 34, 13, 13, -46};
+        1:   12-block  0
+        1:   12-block  1
+    %%%%%:   12-block  2
+    %%%%%:   12-block  3
+        -:   13:
+        1:   14:    EXPECT_EQ(esperada, s);
+        1:   14-block  0
+    $$$$$:   14-block  1
+    $$$$$:   14-block  2
+    $$$$$:   14-block  3
+    $$$$$:   14-block  4
+    $$$$$:   14-block  5
+        1:   14-block  6
+    %%%%%:   14-block  7
+    %%%%%:   14-block  8
+    %%%%%:   14-block  9
+    %%%%%:   14-block 10
+    %%%%%:   14-block 11
+    %%%%%:   14-block 12
+        1:   15:}
+    %%%%%:   15-block  0
+        -:   16:
+        8:   17:TEST(filtradoMediana, senialRcuatro) {
+        1:   17-block  0
+        1:   17-block  1
+        1:   17-block  2
+    %%%%%:   17-block  3
+    %%%%%:   17-block  4
+    %%%%%:   17-block  5
+    %%%%%:   17-block  6
+    %%%%%:   17-block  7
+        1:   17-block  8
+        1:   17-block  9
+        1:   17-block 10
+        1:   17-block 11
+        1:   17-block 12
+        1:   17-block 13
+        1:   17-block 14
+        1:   18:    int prof = 16;
+        1:   19:    int freq = 10;
+        1:   20:    int r = 4;
+        -:   21:
+        2:   22:    senial s = {54, 23, -65, -102, 34, 71, -35, 77, 13, -46};
+        1:   22-block  0
+        1:   22-block  1
+    %%%%%:   22-block  2
+    %%%%%:   22-block  3
+    %%%%%:   22-block  4
+        -:   23:
+        1:   24:    filtradoMediana(s, r, prof, freq);
+        2:   25:    senial esperada = {54, 23, -65, -102, 23, 13, -35, 77, 13, -46};
+        1:   25-block  0
+        1:   25-block  1
+    %%%%%:   25-block  2
+    %%%%%:   25-block  3
+        -:   26:
+        1:   27:    EXPECT_EQ(esperada, s);
+        1:   27-block  0
+    $$$$$:   27-block  1
+    $$$$$:   27-block  2
+    $$$$$:   27-block  3
+    $$$$$:   27-block  4
+    $$$$$:   27-block  5
+        1:   27-block  6
+    %%%%%:   27-block  7
+    %%%%%:   27-block  8
+    %%%%%:   27-block  9
+    %%%%%:   27-block 10
+    %%%%%:   27-block 11
+    %%%%%:   27-block 12
+        5:   28:}
+        1:   28-block  0
+        1:   28-block  1
+        1:   28-block  2
+        1:   28-block  3
+        1:   28-block  4
+        1:   28-block  5
+    %%%%%:   28-block  6

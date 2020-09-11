@@ -1,0 +1,224 @@
+        -:    0:Source:/home/eph3m3r4l/Desktop/TPI-algoritmos/tpi-template-alumnos/tests/ej10TEST.cpp
+        -:    0:Graph:/home/eph3m3r4l/Desktop/TPI-algoritmos/tpi-template-alumnos/cmake-build-debug/CMakeFiles/reunionesRemotas.dir/tests/ej10TEST.gcno
+        -:    0:Data:/home/eph3m3r4l/Desktop/TPI-algoritmos/tpi-template-alumnos/cmake-build-debug/CMakeFiles/reunionesRemotas.dir/tests/ej10TEST.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1:#include "gtest/gtest.h"
+        -:    2:#include "../ejercicios.h"
+        -:    3:
+        8:    4:TEST(reconstruir, faltantesDeUnaMuestra) {
+        1:    4-block  0
+        1:    4-block  1
+        1:    4-block  2
+    %%%%%:    4-block  3
+    %%%%%:    4-block  4
+    %%%%%:    4-block  5
+    %%%%%:    4-block  6
+    %%%%%:    4-block  7
+    %%%%%:    4-block  8
+        1:    4-block  9
+        1:    4-block 10
+        1:    4-block 11
+        1:    4-block 12
+        1:    4-block 13
+        1:    4-block 14
+        1:    4-block 15
+        1:    5:    int prof = 8;
+        1:    6:    int freq = 10;
+        -:    7:
+        -:    8:    senial s = {50, 24, 0, 30, 1, -17, -60, 0, -55, -77,
+        2:    9:                -80, 0, -91};
+        1:    9-block  0
+        1:    9-block  1
+    %%%%%:    9-block  2
+    %%%%%:    9-block  3
+    %%%%%:    9-block  4
+        2:   10:    senial rec = reconstruir(s, prof, freq);
+    %%%%%:   10-block  0
+        -:   11:    senial esperada = {50, 24, 27, 30, 1, -17, -60, -57, -55, -77, 
+        2:   12:                       -80, -85, -91};
+        1:   12-block  0
+        1:   12-block  1
+    %%%%%:   12-block  2
+    %%%%%:   12-block  3
+        -:   13:
+        1:   14:    EXPECT_EQ(rec, esperada);
+        1:   14-block  0
+    $$$$$:   14-block  1
+    $$$$$:   14-block  2
+    $$$$$:   14-block  3
+    $$$$$:   14-block  4
+    $$$$$:   14-block  5
+        1:   14-block  6
+    %%%%%:   14-block  7
+    %%%%%:   14-block  8
+    %%%%%:   14-block  9
+    %%%%%:   14-block 10
+    %%%%%:   14-block 11
+    %%%%%:   14-block 12
+        1:   15:}
+    %%%%%:   15-block  0
+        -:   16:
+        8:   17:TEST(reconstruir, VariosCeros) {
+        1:   17-block  0
+        1:   17-block  1
+        1:   17-block  2
+    %%%%%:   17-block  3
+    %%%%%:   17-block  4
+    %%%%%:   17-block  5
+    %%%%%:   17-block  6
+    %%%%%:   17-block  7
+    %%%%%:   17-block  8
+        1:   17-block  9
+        1:   17-block 10
+        1:   17-block 11
+        1:   17-block 12
+        1:   17-block 13
+        1:   17-block 14
+        1:   17-block 15
+        1:   18:    int prof = 8;
+        1:   19:    int freq = 10;
+        -:   20:
+        -:   21:    senial s = {50, 24, 0, 0, 0, 1, -17, -60, 0, -55, -77,
+        2:   22:                -80, 0, -91};
+        1:   22-block  0
+        1:   22-block  1
+    %%%%%:   22-block  2
+    %%%%%:   22-block  3
+    %%%%%:   22-block  4
+        2:   23:    senial rec = reconstruir(s, prof, freq);
+    %%%%%:   23-block  0
+        -:   24:    senial esperada = {50, 24, 12, 12, 12, 1, -17, -60, -57, -55, -77,
+        2:   25:                       -80, -85, -91};
+        1:   25-block  0
+        1:   25-block  1
+    %%%%%:   25-block  2
+    %%%%%:   25-block  3
+        -:   26:
+        1:   27:    EXPECT_EQ(rec, esperada);
+        1:   27-block  0
+    $$$$$:   27-block  1
+    $$$$$:   27-block  2
+    $$$$$:   27-block  3
+    $$$$$:   27-block  4
+    $$$$$:   27-block  5
+        1:   27-block  6
+    %%%%%:   27-block  7
+    %%%%%:   27-block  8
+    %%%%%:   27-block  9
+    %%%%%:   27-block 10
+    %%%%%:   27-block 11
+    %%%%%:   27-block 12
+        1:   28:}
+    %%%%%:   28-block  0
+        -:   29:
+        8:   30:TEST(reconstruir, sinusoidal) {
+        1:   30-block  0
+        1:   30-block  1
+        1:   30-block  2
+    %%%%%:   30-block  3
+    %%%%%:   30-block  4
+    %%%%%:   30-block  5
+    %%%%%:   30-block  6
+    %%%%%:   30-block  7
+    %%%%%:   30-block  8
+        1:   30-block  9
+        1:   30-block 10
+        1:   30-block 11
+        1:   30-block 12
+        1:   30-block 13
+        1:   30-block 14
+        1:   30-block 15
+        1:   31:    int prof = 8;
+        1:   32:    int freq = 10;
+        -:   33:
+        -:   34:    senial s = {50, 24, 0, -30, 1, -17, 60, 0, -55, -77,
+        2:   35:                -80, 0, -91};
+        1:   35-block  0
+        1:   35-block  1
+    %%%%%:   35-block  2
+    %%%%%:   35-block  3
+    %%%%%:   35-block  4
+        2:   36:    senial rec = reconstruir(s, prof, freq);
+    %%%%%:   36-block  0
+        -:   37:    senial esperada = {50, 24, 0, -30, 1, -17, 60, 0, -55, -77,
+        2:   38:                       -80, -85, -91};
+        1:   38-block  0
+        1:   38-block  1
+    %%%%%:   38-block  2
+    %%%%%:   38-block  3
+        -:   39:
+        1:   40:    EXPECT_EQ(rec, esperada);
+        1:   40-block  0
+    $$$$$:   40-block  1
+    $$$$$:   40-block  2
+    $$$$$:   40-block  3
+    $$$$$:   40-block  4
+    $$$$$:   40-block  5
+        1:   40-block  6
+    %%%%%:   40-block  7
+    %%%%%:   40-block  8
+    %%%%%:   40-block  9
+    %%%%%:   40-block 10
+    %%%%%:   40-block 11
+    %%%%%:   40-block 12
+        1:   41:}
+    %%%%%:   41-block  0
+        -:   42:
+        8:   43:TEST(reconstruir, cerosEntrePositivosYNegativos) {
+        1:   43-block  0
+        1:   43-block  1
+        1:   43-block  2
+    %%%%%:   43-block  3
+    %%%%%:   43-block  4
+    %%%%%:   43-block  5
+    %%%%%:   43-block  6
+    %%%%%:   43-block  7
+        1:   43-block  8
+        1:   43-block  9
+        1:   43-block 10
+        1:   43-block 11
+        1:   43-block 12
+        1:   43-block 13
+        1:   43-block 14
+        1:   44:    int prof = 8;
+        1:   45:    int freq = 10;
+        -:   46:
+        -:   47:    senial s = {50, 24, 0, 0, -30, 1, -17, 60, 0, -55, -77,
+        2:   48:                -80, 0, -91};
+        1:   48-block  0
+        1:   48-block  1
+    %%%%%:   48-block  2
+    %%%%%:   48-block  3
+    %%%%%:   48-block  4
+        2:   49:    senial rec = reconstruir(s, prof, freq);
+    %%%%%:   49-block  0
+        -:   50:    senial esperada = {50, 24, 0, 0, -30, 1, -17, 60, 0, -55, -77,
+        2:   51:                       -80, -85, -91};
+        1:   51-block  0
+        1:   51-block  1
+    %%%%%:   51-block  2
+    %%%%%:   51-block  3
+        -:   52:
+        1:   53:    EXPECT_EQ(rec, esperada);
+        1:   53-block  0
+    $$$$$:   53-block  1
+    $$$$$:   53-block  2
+    $$$$$:   53-block  3
+    $$$$$:   53-block  4
+    $$$$$:   53-block  5
+        1:   53-block  6
+    %%%%%:   53-block  7
+    %%%%%:   53-block  8
+    %%%%%:   53-block  9
+    %%%%%:   53-block 10
+    %%%%%:   53-block 11
+    %%%%%:   53-block 12
+        5:   54:}
+        1:   54-block  0
+        1:   54-block  1
+        1:   54-block  2
+        1:   54-block  3
+        1:   54-block  4
+        1:   54-block  5
+    %%%%%:   54-block  6

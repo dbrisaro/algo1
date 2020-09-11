@@ -1,0 +1,170 @@
+        -:    0:Source:/home/eph3m3r4l/Desktop/TPI-algoritmos/tpi-template-alumnos/tests/ej8TEST.cpp
+        -:    0:Graph:/home/eph3m3r4l/Desktop/TPI-algoritmos/tpi-template-alumnos/cmake-build-debug/CMakeFiles/reunionesRemotas.dir/tests/ej8TEST.gcno
+        -:    0:Data:/home/eph3m3r4l/Desktop/TPI-algoritmos/tpi-template-alumnos/cmake-build-debug/CMakeFiles/reunionesRemotas.dir/tests/ej8TEST.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1:#include "gtest/gtest.h"
+        -:    2:#include "../ejercicios.h"
+        -:    3:
+        8:    4:TEST(silencios, silenciosTresSilenciosSeparados){
+        1:    4-block  0
+        1:    4-block  1
+        1:    4-block  2
+    %%%%%:    4-block  3
+    %%%%%:    4-block  4
+    %%%%%:    4-block  5
+    %%%%%:    4-block  6
+    %%%%%:    4-block  7
+    %%%%%:    4-block  8
+        1:    4-block  9
+        1:    4-block 10
+        1:    4-block 11
+        1:    4-block 12
+        1:    4-block 13
+        1:    4-block 14
+        1:    4-block 15
+        1:    5:    int prof = 32;
+        1:    6:    int freq = 10;
+        1:    7:    int umbral = 80;
+        -:    8:
+        2:    9:    senial s = {5, -3, 2, 1, 66, 734, -1803, -551, -19, 27, 396, 231, 32, 33, 14};
+        1:    9-block  0
+        1:    9-block  1
+    %%%%%:    9-block  2
+    %%%%%:    9-block  3
+    %%%%%:    9-block  4
+        -:   10:
+        2:   11:    vector<pair<int, int>> intervalos = silencios(s, prof, freq, umbral);
+    %%%%%:   11-block  0
+        2:   12:    vector<pair<int, int>> esperado = {make_pair(0, 4), make_pair(8, 9), make_pair(12, 14)};
+        1:   12-block  0
+        1:   12-block  1
+    %%%%%:   12-block  2
+    %%%%%:   12-block  3
+        -:   13:
+        1:   14:    EXPECT_EQ(intervalos, esperado);
+        1:   14-block  0
+    $$$$$:   14-block  1
+    $$$$$:   14-block  2
+    $$$$$:   14-block  3
+    $$$$$:   14-block  4
+    $$$$$:   14-block  5
+        1:   14-block  6
+    %%%%%:   14-block  7
+    %%%%%:   14-block  8
+    %%%%%:   14-block  9
+    %%%%%:   14-block 10
+    %%%%%:   14-block 11
+    %%%%%:   14-block 12
+        1:   15:}
+    %%%%%:   15-block  0
+        -:   16:
+        8:   17:TEST(silencios, sinSilencios){
+        1:   17-block  0
+        1:   17-block  1
+        1:   17-block  2
+    %%%%%:   17-block  3
+    %%%%%:   17-block  4
+    %%%%%:   17-block  5
+    %%%%%:   17-block  6
+    %%%%%:   17-block  7
+    %%%%%:   17-block  8
+        1:   17-block  9
+        1:   17-block 10
+        1:   17-block 11
+        1:   17-block 12
+        1:   17-block 13
+        1:   17-block 14
+        1:   17-block 15
+        1:   18:    int prof = 32;
+        1:   19:    int freq = 10;
+        1:   20:    int umbral = 80;
+        -:   21:
+        -:   22:    // Como consideramos un intervalo de silencio, un intervalo con al menos 2 muestras,
+        -:   23:    // el 20 no se considera como tal.
+        2:   24:    senial s = {85, -83, 20, 88, 100, 86, 734, -1803, -551, -90, 127, 396, 231, 132, 133, 140};
+        1:   24-block  0
+        1:   24-block  1
+    %%%%%:   24-block  2
+    %%%%%:   24-block  3
+        -:   25:
+        2:   26:    vector<pair<int, int>> intervalos = silencios(s, prof, freq, umbral);
+    %%%%%:   26-block  0
+        2:   27:    vector<pair<int, int>> esperado = {};
+        1:   27-block  0
+    %%%%%:   27-block  1
+        -:   28:
+        1:   29:    EXPECT_EQ(intervalos, esperado);
+        1:   29-block  0
+    $$$$$:   29-block  1
+    $$$$$:   29-block  2
+    $$$$$:   29-block  3
+    $$$$$:   29-block  4
+    $$$$$:   29-block  5
+        1:   29-block  6
+    %%%%%:   29-block  7
+    %%%%%:   29-block  8
+    %%%%%:   29-block  9
+    %%%%%:   29-block 10
+    %%%%%:   29-block 11
+    %%%%%:   29-block 12
+        1:   30:}
+    %%%%%:   30-block  0
+        -:   31:
+        8:   32:TEST(silencios, TodoSilencio){
+        1:   32-block  0
+        1:   32-block  1
+        1:   32-block  2
+    %%%%%:   32-block  3
+    %%%%%:   32-block  4
+    %%%%%:   32-block  5
+    %%%%%:   32-block  6
+    %%%%%:   32-block  7
+        1:   32-block  8
+        1:   32-block  9
+        1:   32-block 10
+        1:   32-block 11
+        1:   32-block 12
+        1:   32-block 13
+        1:   32-block 14
+        1:   33:    int prof = 32;
+        1:   34:    int freq = 10;
+        1:   35:    int umbral = 36;
+        -:   36:
+        2:   37:    senial s = {5, -3, 2, 1, 6, 23, -18, -15, -19, 27, 35, 31, 32, 33, 14};
+        1:   37-block  0
+        1:   37-block  1
+    %%%%%:   37-block  2
+    %%%%%:   37-block  3
+    %%%%%:   37-block  4
+        -:   38:
+        2:   39:    vector<pair<int, int>> intervalos = silencios(s, prof, freq, umbral);
+    %%%%%:   39-block  0
+        2:   40:    vector<pair<int, int>> esperado = {make_pair(0, 14)};
+        1:   40-block  0
+        1:   40-block  1
+    %%%%%:   40-block  2
+    %%%%%:   40-block  3
+        -:   41:
+        1:   42:    EXPECT_EQ(intervalos, esperado);
+        1:   42-block  0
+    $$$$$:   42-block  1
+    $$$$$:   42-block  2
+    $$$$$:   42-block  3
+    $$$$$:   42-block  4
+    $$$$$:   42-block  5
+        1:   42-block  6
+    %%%%%:   42-block  7
+    %%%%%:   42-block  8
+    %%%%%:   42-block  9
+    %%%%%:   42-block 10
+    %%%%%:   42-block 11
+    %%%%%:   42-block 12
+        5:   43:}
+        1:   43-block  0
+        1:   43-block  1
+        1:   43-block  2
+        1:   43-block  3
+        1:   43-block  4
+        1:   43-block  5
+    %%%%%:   43-block  6

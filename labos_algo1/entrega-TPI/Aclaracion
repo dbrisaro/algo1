@@ -1,0 +1,43 @@
+
+Aclaración:
+
+Dentro de la carpeta TPI estan todos los archivos, incluyendo los extras 
+por las dudas.
+
+En el ejercicio 10 (reconstruir) se tomo como sinusoidal a las muestras 
+que contenian 1 o mas ceros consecutivos PERO cuyos extremos eran bordeados 
+con un numero positivo en un borde y un numero negativo en el otro.
+
+Ejemplo:
+ 
+ s = {50, 24, 0, 0, -30, 1, ...} Quedaria igual luego de pasar por reconstruir.
+ 
+Si la función tomara como sinusoidal a un solo pasaje por cero, solo deberia 
+modificarse:
+
+
+senial reconstruir(senial const& s, int prof, int freq) {
+    senial senalReconstruida;
+    int i = 0;
+    while(i<s.size()) {
+        if ((s[i] == 0) && not( ((s[i+1]<0) && (s[i-1]>0)) || ((s[i+1]>0) && (s[i-1]<0)) )) {
+            int l = i;
+            while (s[i + 1] == 0) {
+                i += 1;
+            }
+            int promedio = (s[l-1] + s[i+1])/2;
+            for(int k=l; k <= i; k++){
+                senalReconstruida.push_back(promedio);
+            }
+            i += 1;
+        } else {
+            senalReconstruida.push_back(s[i]);
+            i += 1;
+        }
+    }
+    return senalReconstruida;
+}
+
+En este caso s = {50, 24, 0, 0, -30, 1, ...} pasado por la función devolvería:
+s = {50, 24, -3, -3, -30, 1, ...}
+

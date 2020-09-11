@@ -1,0 +1,4 @@
+"/home/eph3m3r4l/Desktop/Algo 1/Labo/CLion-2020.1/clion-2020.1/bin/cmake/linux/bin/cmake" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /home/eph3m3r4l/Desktop/TPI-algoritmos/tpi-template-alumnos
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/eph3m3r4l/Desktop/TPI-algoritmos/tpi-template-alumnos/cmake-build-debug

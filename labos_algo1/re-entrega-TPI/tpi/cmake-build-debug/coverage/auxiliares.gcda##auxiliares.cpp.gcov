@@ -1,0 +1,357 @@
+        -:    0:Source:/home/eph3m3r4l/Desktop/TPI-algoritmos/tpi-template-alumnos/auxiliares.cpp
+        -:    0:Graph:/home/eph3m3r4l/Desktop/TPI-algoritmos/tpi-template-alumnos/cmake-build-debug/CMakeFiles/reunionesRemotas.dir/auxiliares.gcno
+        -:    0:Data:/home/eph3m3r4l/Desktop/TPI-algoritmos/tpi-template-alumnos/cmake-build-debug/CMakeFiles/reunionesRemotas.dir/auxiliares.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1:#include "definiciones.h"
+        -:    2:#include "auxiliares.h"
+        -:    3:
+        -:    4:// aqui se pueden ubicar todas las funciones auxiliares de soporte para la resolucion de los ejercicios
+        -:    5:
+        -:    6:// Ejercicio 1:
+        -:    7:
+       13:    8:bool elRango(vector<int> const& s, int prof) {
+       13:    8-block  0
+       13:    9:    bool rango = true;
+       13:   10:    int bajo = (pow(-2,(prof - 1 )) );
+       13:   10-block  0
+       13:   11:    int alto = ((pow(2,(prof - 1 )) - 1 ) );
+      213:   12:    for (int i=0; i < s.size(); i++) {
+      213:   12-block  0
+      200:   12-block  1
+      200:   13:        rango = rango && ( ( s[i] >= bajo ) && ( s[i] <= alto ) );
+      200:   13-block  0
+      168:   13-block  1
+      168:   13-block  2
+      166:   13-block  3
+       34:   13-block  4
+        -:   14:    }
+       13:   15:    return rango;
+       13:   15-block  0
+        -:   16:}
+        -:   17:
+      568:   18:bool duracion(vector<int> const& s, int freq, int seg) {
+      568:   18-block  0
+      568:   19:    return (s.size() >= (freq * seg));
+      568:   19-block  0
+        -:   20:}
+        -:   21:
+       13:   22:bool esValida(vector<int> const& s, int prof, int freq) {
+       13:   22-block  0
+       13:   23:    bool freqValida = (freq == 10);
+       13:   24:    bool enRango = elRango(s, prof);
+       13:   24-block  0
+       13:   25:    bool profValida = (prof == 8) || (prof == 16) || (prof == 32);
+        2:   25-block  0
+        2:   25-block  1
+       12:   25-block  2
+        1:   25-block  3
+       13:   26:    bool laDuracion = duracion(s, freq, 1);
+       13:   26-block  0
+       13:   27:    bool valida = freqValida && enRango && profValida && laDuracion;
+       12:   27-block  0
+       10:   27-block  1
+       10:   27-block  2
+        8:   27-block  3
+        5:   27-block  4
+       13:   28:    return valida;
+       13:   28-block  0
+        -:   29:}
+        -:   30:
+        -:   31:// Ejercicio 2:
+        -:   32:
+       63:   33:float tono(senial const& s) {
+       63:   33-block  0
+       63:   34:    float m = 0.0;
+     1354:   35:    for(int i = 0; i < s.size(); i++) {
+       63:   35-block  0
+     1354:   35-block  1
+     1291:   36:        m = m + abs(s[i]);
+     1291:   36-block  0
+        -:   37:    }
+       63:   38:    m = m / s.size();
+       63:   38-block  0
+       63:   39:    return m ;
+        -:   40:}
+        -:   41:
+       23:   42:bool superaUmbral(senial const& s, int umbral) {
+       23:   42-block  0
+       23:   43:    return (tono(s) > umbral);
+       23:   43-block  0
+        -:   44:}
+        -:   45:
+     1225:   46:senial subsec(senial const& s, int a, int b) {
+     1225:   46-block  0
+     1225:   47:    senial res;
+     1225:   47-block  0
+    12250:   48:    for (int i=a; (i<b) && (i<s.size()); i++) {
+    12250:   48-block  0
+    11025:   48-block  1
+    11025:   48-block  2
+     1225:   48-block  3
+    12250:   48-block  4
+    11025:   48-block  5
+    11025:   49:        res.push_back(s[i]);
+    11025:   49-block  0
+        -:   50:    }
+     1225:   51:    return res;
+     1225:   51-block  0
+     1225:   51-block  1
+    %%%%%:   51-block  2
+        -:   52:}
+        -:   53:
+        -:   54:// Ejercicio 3:
+        -:   55:
+        4:   56:bool esMatriz(reunion const& r) {
+        4:   56-block  0
+        4:   57:    bool res = true;
+       15:   58:    for(int i = 0; i < r.size(); i++) {
+        4:   58-block  0
+       15:   58-block  1
+       11:   58-block  2
+       11:   59:        res = res && ((((r[i]).first).size()) == (((r[0]).first).size()));
+       11:   59-block  0
+       11:   59-block  1
+       10:   59-block  2
+        1:   59-block  3
+        -:   60:    }
+        4:   61:    return res;
+        4:   61-block  0
+        -:   62:}
+        -:   63:
+        3:   64:bool senialesValidas(reunion const& r, int prof, int freq) {
+        3:   64-block  0
+        3:   65:    bool valida = true;
+       11:   66:    for(int i = 0; i < r.size(); i++) {
+        3:   66-block  0
+       11:   66-block  1
+        8:   66-block  2
+        8:   67:        valida = valida && esValida((r[i].first), prof, freq);
+        8:   67-block  0
+        6:   67-block  1
+        5:   67-block  2
+        3:   67-block  3
+        -:   68:    }
+        3:   69:    return valida;
+        3:   69-block  0
+        -:   70:}
+        -:   71:
+        2:   72:bool hablantesDeReunionesValidas(reunion const& r, int prof, int freq) {
+        2:   72-block  0
+        2:   73:    bool res = true;
+        2:   74:    int len = r.size();
+        2:   74-block  0
+        7:   75:    for(int i = 0; i < len; i++) {
+        7:   75-block  0
+        5:   75-block  1
+       18:   76:        for(int j = 0; j < len; j++) {
+        5:   76-block  0
+       18:   76-block  1
+       13:   76-block  2
+       39:   77:            if ( (((r[i]).second) >= len) || ((i != j) && (r[i].second == r[j].second))
+       13:   77-block  0
+       13:   77-block  1
+        8:   77-block  2
+       13:   77-block  3
+       26:   78:            || ((i == j) && (r[i].second != r[j].second)) ) {
+       13:   78-block  0
+        5:   78-block  1
+    $$$$$:   78-block  2
+       13:   78-block  3
+    #####:   79:                res = false;
+    $$$$$:   79-block  0
+        -:   80:            }
+        -:   81:        }
+        -:   82:    }
+        2:   83:    return res;
+        2:   83-block  0
+        -:   84:}
+        -:   85:
+        -:   86:
+        -:   87:// Ejercicio 4:
+        -:   88:
+        2:   89:vector<int> acelerarSenial(vector<int> s) {
+        2:   89-block  0
+        2:   90:    vector<int> s0;
+        2:   90-block  0
+       51:   91:    for(int i = 0; i < s.size(); i++){
+       51:   91-block  0
+       49:   91-block  1
+       49:   92:        if (i % 2 == 1) {
+       49:   92-block  0
+       24:   93:            s0.push_back(s[i]);
+       24:   93-block  0
+       24:   93-block  1
+        -:   94:        }
+        -:   95:    }
+        2:   96:    return s0;
+        2:   96-block  0
+        2:   96-block  1
+    %%%%%:   96-block  2
+        -:   97:}
+        -:   98:
+        -:   99:// Ejercicio 5:
+        -:  100:
+        4:  101:vector<int> senialInterpolada(vector<int> s) {
+        4:  101-block  0
+        4:  102:    vector<int> s0;
+        4:  102-block  0
+       41:  103:    for(int i = 0; i < s.size()-1; i++){
+       41:  103-block  0
+       37:  103-block  1
+       37:  104:        int prom = (s[i] + s[i+1]) / 2;
+       37:  104-block  0
+       37:  105:        s0.push_back(s[i]);
+       37:  106:        s0.push_back(prom);
+       37:  106-block  0
+        -:  107:    }
+        4:  108:    s0.push_back(s[s.size()-1]);
+        4:  108-block  0
+        4:  109:    return s0;
+        4:  109-block  0
+        4:  109-block  1
+    %%%%%:  109-block  2
+    %%%%%:  109-block  3
+        -:  110:}
+        -:  111:
+        -:  112:// Ejercicios 6:
+        -:  113:
+        3:  114:vector<int> tonoMaximo(reunion const& r) {
+        3:  114-block  0
+        3:  115:    vector<int> maxi = r[0].first;
+        3:  115-block  0
+       10:  116:    for(int i = 0; i < r.size(); i++) {
+       10:  116-block  0
+        7:  116-block  1
+        7:  117:        if (tono(r[i].first) >= tono(maxi)) {
+        7:  117-block  0
+        7:  118:            maxi = r[i].first;
+        7:  118-block  0
+        7:  118-block  1
+        -:  119:        }
+        -:  120:    }
+        3:  121:    return maxi;
+        3:  121-block  0
+        3:  121-block  1
+    %%%%%:  121-block  2
+        -:  122:}
+        -:  123:
+        -:  124:// Ejercicio 7:
+        -:  125:
+        6:  126:int encontrarMaxiPosi(reunion& r, int d, int h) {
+        6:  126-block  0
+        6:  127:    int maxi = d;
+       12:  128:    for(int i = d+1; i < h; i++) {
+        6:  128-block  0
+       12:  128-block  1
+        6:  128-block  2
+        6:  129:        if (tono(r[i].first) > tono(r[maxi].first)) {
+        6:  129-block  0
+        4:  130:            maxi = i;
+        4:  130-block  0
+        -:  131:        }
+        -:  132:    }
+        6:  133:    return maxi;
+        6:  133-block  0
+        -:  134:}
+        -:  135:
+        -:  136://Ejercicio 8:
+        -:  137:
+       20:  138:bool duraMasDe0_1(vector<int> const& s, int freq) {
+       20:  138-block  0
+       20:  139:    return (s.size() > (freq * 0.1));
+       20:  139-block  0
+        -:  140:}
+        -:  141:
+        -:  142:// Ejercicio 9:
+        -:  143:
+        7:  144:bool noSeSuperponen(senial uno, senial dos, int umbral){
+        7:  144-block  0
+        7:  145:    bool noSuperpuestos = true;
+       84:  146:    for(int k = 0; k < uno.size(); k++){
+        7:  146-block  0
+       84:  146-block  1
+       77:  146-block  2
+       77:  147:        if (k == 0){
+       77:  147-block  0
+       14:  148:            noSuperpuestos = noSuperpuestos && ( ( (uno[k] >= umbral) && ( (dos[k] < umbral)
+        7:  148-block  0
+        7:  148-block  1
+    $$$$$:  148-block  2
+        6:  148-block  3
+        1:  148-block  4
+        7:  148-block  5
+        7:  149:                    && (dos[(k+1)] < umbral))) || ((uno[k] < umbral) && (uno[(k+1)] < umbral)) );
+    $$$$$:  149-block  0
+        7:  149-block  1
+        7:  149-block  2
+        -:  150:        } else {
+       70:  151:            if (k == uno.size() - 1) {
+       70:  151-block  0
+       13:  152:                noSuperpuestos = noSuperpuestos && ( (((uno[k-1] >= umbral) || ((uno[k-1] < umbral)
+        7:  152-block  0
+        6:  152-block  1
+        4:  152-block  2
+        6:  152-block  3
+        1:  152-block  4
+        7:  152-block  5
+        6:  153:                        && (uno[k] >= umbral)))  && ((dos[k] < umbral) && (dos[k-1] < umbral)))
+        4:  153-block  0
+        2:  153-block  1
+        2:  153-block  2
+        4:  154:                        || ((uno[k-1] < umbral) && (uno[k] < umbral)));
+        4:  154-block  0
+        4:  154-block  1
+        -:  155:            } else {
+      117:  156:                noSuperpuestos = noSuperpuestos && ( ( (uno[k] >= umbral) && ( (dos[k] < umbral)
+       63:  156-block  0
+       54:  156-block  1
+        4:  156-block  2
+       54:  156-block  3
+        9:  156-block  4
+       63:  156-block  5
+       54:  157:                        && ( (dos[(k+1)] < umbral) || (dos[k-1] < umbral) ))) || (uno[k] < umbral) );
+        4:  157-block  0
+    $$$$$:  157-block  1
+       50:  157-block  2
+        -:  158:            }
+        -:  159:        }
+        -:  160:    }
+        7:  161:    return noSuperpuestos;
+        7:  161-block  0
+        -:  162:}
+        -:  163:
+        -:  164:// Ejercicio 11:
+        -:  165:
+       48:  166:int findMinPosi(vector<int> s, int d, int h) {
+       48:  166-block  0
+       48:  167:    int min = d;
+      180:  168:    for(int i=d+1; i <= h; i++) {
+       48:  168-block  0
+      180:  168-block  1
+      132:  168-block  2
+      132:  169:        if (s[i] < s[min]) {
+      132:  169-block  0
+       42:  170:            min = i;
+       42:  170-block  0
+        -:  171:        }
+        -:  172:    }
+       48:  173:    return min;
+       48:  173-block  0
+        -:  174:}
+        -:  175:
+        8:  176:int ordenarYmediana(int inicial, int final, vector<int> s) {
+        8:  176-block  0
+       56:  177:    for (int i = inicial; i <= final; i++) {
+        8:  177-block  0
+       56:  177-block  1
+       48:  178:        int minPosi = findMinPosi(s, i, final);
+       48:  178-block  0
+       48:  179:        int auxiliar = s[i];
+       48:  180:        s[i] = s[minPosi];
+       48:  181:        s[minPosi] = auxiliar;
+        -:  182:    }
+        8:  183:    int indiceMediana = (final-inicial)/2 + inicial;
+        8:  184:    return s[indiceMediana];
+        8:  184-block  0
+        -:  185:}

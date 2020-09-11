@@ -1,0 +1,12 @@
+Ejercicios Prácticos del laboratorio
+Deben descargar el archivo ejericicios-labo01.pdf del folder "Talleres/Laboratorio 01 - Introducción a C++" donde encontrarán una serie de ejercicios.
+
+Entrega de ejercicios de labo
+Algunos de los ejercicios los deben entregar a través de una plataforma online que utilizaremos para los labos: https://www.hackerrank.com/. Si ya tienen cuenta la pueden usar, sino al entrar al primer labo se pueden crear una. Es importante que utilicen la misma cuenta a lo largo de la materia.
+
+Para acceder a la entrega obligatoria de este laboratorio entre a: https://www.hackerrank.com/test/9m07b1p87i/411829acbb1cced527dac825ad507eea
+
+Una vez que ingresen van a tener un tiempo limitado para enviar de 60 minutos. LES RECOMENDAMOS QUE HAGAN LOS EJERCICIOS ANTES DE ENTRAR A LA PLATAFORMA A ENTREGAR. Tienen tiempo para enviarlos hasta el 22/04/20.
+
+Cualquier consulta que tengan sobre los ejercicios nos pueden escribir en el foro. Si tienen problemas para acceder a HackerRank o algún problema relacionado a la plataforma escriban a Vero.
+

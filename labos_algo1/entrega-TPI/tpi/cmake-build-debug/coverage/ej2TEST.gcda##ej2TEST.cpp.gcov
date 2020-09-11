@@ -1,0 +1,112 @@
+        -:    0:Source:/home/eph3m3r4l/Desktop/TPI-algoritmos/tpi-template-alumnos/tests/ej2TEST.cpp
+        -:    0:Graph:/home/eph3m3r4l/Desktop/TPI-algoritmos/tpi-template-alumnos/cmake-build-debug/CMakeFiles/reunionesRemotas.dir/tests/ej2TEST.gcno
+        -:    0:Data:/home/eph3m3r4l/Desktop/TPI-algoritmos/tpi-template-alumnos/cmake-build-debug/CMakeFiles/reunionesRemotas.dir/tests/ej2TEST.gcda
+        -:    0:Runs:1
+        -:    0:Programs:1
+        -:    1:#include "gtest/gtest.h"
+        -:    2:#include "../ejercicios.h"
+        -:    3:
+        8:    4:TEST(seEnojo, checkForSubseqOfMinSizeTwoTimesFreq) {
+        1:    4-block  0
+        1:    4-block  1
+        1:    4-block  2
+    %%%%%:    4-block  3
+    %%%%%:    4-block  4
+    %%%%%:    4-block  5
+    %%%%%:    4-block  6
+    %%%%%:    4-block  7
+    %%%%%:    4-block  8
+        1:    4-block  9
+        1:    4-block 10
+        1:    4-block 11
+        1:    4-block 12
+        1:    4-block 13
+        1:    4-block 14
+        1:    4-block 15
+        1:    5:    int prof = 8;
+        1:    6:    int freq = 10;
+        1:    7:    int thresh = 65;
+        -:    8:
+        -:    9:    senial fstSig = { 17,   32,   80,   85,   99,   62,    7,  -55, -107, -101,  -88, -26,
+        2:   10:    -3,   52,   62,   99,   89,   67,    7,  -61,  -97, -115, -71,  -45,   17};
+        1:   10-block  0
+        1:   10-block  1
+    %%%%%:   10-block  2
+    %%%%%:   10-block  3
+    %%%%%:   10-block  4
+        -:   11:
+        1:   12:    EXPECT_TRUE(seEnojo(fstSig, thresh, prof, freq));
+        1:   12-block  0
+        1:   12-block  1
+    $$$$$:   12-block  2
+    $$$$$:   12-block  3
+    $$$$$:   12-block  4
+    $$$$$:   12-block  5
+    $$$$$:   12-block  6
+        1:   12-block  7
+    %%%%%:   12-block  8
+    %%%%%:   12-block  9
+    %%%%%:   12-block 10
+    %%%%%:   12-block 11
+    %%%%%:   12-block 12
+    %%%%%:   12-block 13
+    %%%%%:   12-block 14
+    %%%%%:   12-block 15
+    %%%%%:   12-block 16
+        1:   13:}
+    %%%%%:   13-block  0
+        -:   14:
+        8:   15:TEST(seEnojo, secuenciaNoSeEnojo) {
+        1:   15-block  0
+        1:   15-block  1
+        1:   15-block  2
+    %%%%%:   15-block  3
+    %%%%%:   15-block  4
+    %%%%%:   15-block  5
+    %%%%%:   15-block  6
+    %%%%%:   15-block  7
+        1:   15-block  8
+        1:   15-block  9
+        1:   15-block 10
+        1:   15-block 11
+        1:   15-block 12
+        1:   15-block 13
+        1:   15-block 14
+        1:   16:    int prof = 8;
+        1:   17:    int freq = 10;
+        1:   18:    int thresh = 65;
+        -:   19:
+        -:   20:    senial fstSig = { 17,   32,   80,   25,   99,   62,    7,  -55, -17, -101,  -8, -26,
+        2:   21:                      -3,   52,   62,   99,   58,   67,    7,  -61,  -97, -15, -71,  -45,   17};
+        1:   21-block  0
+        1:   21-block  1
+    %%%%%:   21-block  2
+    %%%%%:   21-block  3
+    %%%%%:   21-block  4
+        -:   22:
+        1:   23:    EXPECT_FALSE(seEnojo(fstSig, thresh, prof, freq));
+        1:   23-block  0
+        1:   23-block  1
+    $$$$$:   23-block  2
+    $$$$$:   23-block  3
+    $$$$$:   23-block  4
+    $$$$$:   23-block  5
+    $$$$$:   23-block  6
+        1:   23-block  7
+    %%%%%:   23-block  8
+    %%%%%:   23-block  9
+    %%%%%:   23-block 10
+    %%%%%:   23-block 11
+    %%%%%:   23-block 12
+    %%%%%:   23-block 13
+    %%%%%:   23-block 14
+    %%%%%:   23-block 15
+    %%%%%:   23-block 16
+        5:   24:}
+        1:   24-block  0
+        1:   24-block  1
+        1:   24-block  2
+        1:   24-block  3
+        1:   24-block  4
+        1:   24-block  5
+    %%%%%:   24-block  6

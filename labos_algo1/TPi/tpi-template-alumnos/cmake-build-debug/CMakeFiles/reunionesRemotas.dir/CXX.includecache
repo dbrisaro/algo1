@@ -1,0 +1,32 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/daniu/Documentos/materias/algo1/labos_algo1/TPi/tpi-template-alumnos/src/auxiliares.h
+
+/home/daniu/Documentos/materias/algo1/labos_algo1/TPi/tpi-template-alumnos/src/definiciones.h
+vector
+-
+cmath
+-
+algorithm
+-
+
+/home/daniu/Documentos/materias/algo1/labos_algo1/TPi/tpi-template-alumnos/src/ejercicios.cpp
+algorithm
+-
+ejercicios.h
+/home/daniu/Documentos/materias/algo1/labos_algo1/TPi/tpi-template-alumnos/src/ejercicios.h
+auxiliares.h
+/home/daniu/Documentos/materias/algo1/labos_algo1/TPi/tpi-template-alumnos/src/auxiliares.h
+iostream
+-
+
+/home/daniu/Documentos/materias/algo1/labos_algo1/TPi/tpi-template-alumnos/src/ejercicios.h
+definiciones.h
+/home/daniu/Documentos/materias/algo1/labos_algo1/TPi/tpi-template-alumnos/src/definiciones.h
+

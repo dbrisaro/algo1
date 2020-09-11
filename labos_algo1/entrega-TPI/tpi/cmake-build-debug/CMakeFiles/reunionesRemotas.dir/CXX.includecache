@@ -1,0 +1,30 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/home/eph3m3r4l/Desktop/TPI-algoritmos/tpi-template-alumnos/auxiliares.h
+
+/home/eph3m3r4l/Desktop/TPI-algoritmos/tpi-template-alumnos/definiciones.h
+vector
+-
+cmath
+-
+algorithm
+-
+
+/home/eph3m3r4l/Desktop/TPI-algoritmos/tpi-template-alumnos/ejercicios.cpp
+algorithm
+-
+ejercicios.h
+/home/eph3m3r4l/Desktop/TPI-algoritmos/tpi-template-alumnos/ejercicios.h
+auxiliares.h
+/home/eph3m3r4l/Desktop/TPI-algoritmos/tpi-template-alumnos/auxiliares.h
+
+/home/eph3m3r4l/Desktop/TPI-algoritmos/tpi-template-alumnos/ejercicios.h
+definiciones.h
+/home/eph3m3r4l/Desktop/TPI-algoritmos/tpi-template-alumnos/definiciones.h
+
